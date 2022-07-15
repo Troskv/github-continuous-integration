@@ -18,19 +18,19 @@ _Create workflows that enable you to use Continuous Integration (CI) for your pr
   Do not use quotes on the <details> tag attributes.
 -->
 
-<!--step0
+<!--step0-->
 
 [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
-- __Who is this for_: Developers, DevOps Engineers, new GitHub users, students, teams.
-- __What you'll learn_: What continuous integration is, how to use GitHub Actions for CI, how to create a workflow that runs tests and produces test reports.
-- __What you'll build_: We'll use [remark-lint](https://github.com/remarkjs/remark-lint) to check the consistency of Markdown files.
-- __Prerequisites__: We assume you've completed [Hello GitHub Actions](https://github.com/skills/hello-github-actions) first.
-- __How long__: This course is five steps long and takes less than two hours to complete.
+- **Who is this for**: Developers, DevOps Engineers, new GitHub users, students, teams.
+- **What you'll learn**: What continuous integration is, how to use GitHub Actions for CI, how to create a workflow that runs tests and produces test reports.
+- **What you'll build**: We'll use [remark-lint](https://github.com/remarkjs/remark-lint) to check the consistency of Markdown files.
+- **Prerequisites**: We assume you've completed [Hello GitHub Actions](https://github.com/skills/hello-github-actions) first.
+- **How long**: This course is five steps long and takes less than two hours to complete.
 
 ## How to start this course
 
-1. Above these instructions, right-click _Use this template_ and open the link in a new tab.
+1. Above these instructions, right-click **Use this template** and open the link in a new tab.
    ![Use this template](https://user-images.githubusercontent.com/1221423/169618716-fb17528d-f332-4fc5-a11a-eaa23562665e.png)
 2. In the new tab, follow the prompts to create a new repository.
    - For owner, choose your personal account or an organization to host the repository.
@@ -38,7 +38,7 @@ _Create workflows that enable you to use Continuous Integration (CI) for your pr
    ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
-endstep0-->
+<!--endstep0-->
 
 <!--
   <<< Author notes: Step 1 >>>
@@ -48,19 +48,19 @@ endstep0-->
   Encourage users to open new tabs for steps!
 -->
 
-<details id=1 open>
+<details id=1>
 <summary><h2>Step 1: Add a test workflow</h2></summary>
 
 _Welcome to "GitHub Actions: Continuous Integration"! :wave:_
 
-__What is _continuous integration_?__: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
+**What is _continuous integration_?**: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
 ![An illustration split in two. On the left: illustration of how GitHub Actions terms are encapsulated. At the highest level: workflows and event triggers. Inside of workflows: jobs and definition of the build environment. Inside jobs: steps. Inside steps: a call to an action. On the right: the sequence: workflows, job, step, action.](https://user-images.githubusercontent.com/6351798/88589835-f5ce0900-d016-11ea-8c8a-0e7d7907c713.png)
 
-- __Workflow__: A workflow is a unit of automation from start to finish, including the definition of what triggers the automation, what environment or other aspects should be taken account during the automation, and what should happen as a result of the trigger.
-- __Job__: A job is a section of the workflow, and is made up of one or more steps. In this section of our workflow, the template defines the steps that make up the `build` job.
-- __Step__: A step represents one _effect_ of the automation. A step could be defined as a GitHub Action, or another unit, like printing something to the console.
-- __Action__: An action is a piece of automation written in a way that is compatible with workflows. Actions can be written by GitHub, by the open source community, or you can write them yourself!
+- **Workflow**: A workflow is a unit of automation from start to finish, including the definition of what triggers the automation, what environment or other aspects should be taken account during the automation, and what should happen as a result of the trigger.
+- **Job**: A job is a section of the workflow, and is made up of one or more steps. In this section of our workflow, the template defines the steps that make up the `build` job.
+- **Step**: A step represents one _effect_ of the automation. A step could be defined as a GitHub Action, or another unit, like printing something to the console.
+- **Action**: An action is a piece of automation written in a way that is compatible with workflows. Actions can be written by GitHub, by the open source community, or you can write them yourself!
 
 To learn more, check out "[Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)" in the GitHub Docs.
 
@@ -82,9 +82,9 @@ First, let's add a workflow to lint our Markdown files in this repository.
           npx remark . --use remark-preset-lint-consistent --frail
    ```
    > We expect this to create a error build. We'll fix this in the next step.
-1. Click __Start commit__, and choose to make a new branch named `ci`.
-1. Click __Propose a new file__.
-1. Click __Create pull request__.
+1. Click **Start commit**, and choose to make a new branch named `ci`.
+1. Click **Propose a new file**.
+1. Click **Create pull request**.
 1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
@@ -128,7 +128,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
    ```markdown
    _underscore_
    ```
-1. __Commit changes__.
+1. **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
